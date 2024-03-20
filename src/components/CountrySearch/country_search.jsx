@@ -37,7 +37,7 @@ const CountrySearch = () => {
             />
             <div className={styles.grid}>
                 {filteredCountries.map(country => (
-                    <div key={country.cca3} className={styles.card}>
+                    <div key={country.cca3} className={styles.countryCard}>
                         <img 
                             src={country.flags.png} 
                             alt={`Flag of ${country.name.common}`}
