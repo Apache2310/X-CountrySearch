@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import styles from "./country.module.css";
+import "./country.css";
 
 const CountrySearch = () => {
     const [countries, setCountries] = useState([]);
@@ -28,21 +28,21 @@ const CountrySearch = () => {
     );
 
     return (
-        <div className= {styles.container}>
+        <div className= 'container'>
             <input
                 type="text"
                 placeholder="Search for countries..."
                 value={searchTerm}
                 onChange={handleSearch}
-                className={styles.search}
+                className='search'
             />
-            <div className={styles.grid}>
+            <div className='grid'>
                 {filteredCountries.map(country => (
-                    <div key={country.cca3} className={styles.countryCard}>
+                    <div key={country.cca3} className='countryCard'>
                         <img 
                             src={country.flags.png} 
                             alt={`Flag of ${country.name.common}`}
-                            className={styles.image} 
+                            className='image' 
                         />
                         <p>{country.name.common}</p>
                     </div>
