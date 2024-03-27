@@ -36,6 +36,11 @@
     cursor: pointer;
 }
 
+.countryCard p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .image {
   width: 100px;
   height: 100px;
