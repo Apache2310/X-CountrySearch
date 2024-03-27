@@ -36,6 +36,7 @@ const CountrySearch = () => {
                 onChange={handleSearch}
                 className='search'
             />
+            
             <div className='grid'>
                 {filteredCountries.map(country => (
                     <div key={country.cca3} className='countryCard'>
